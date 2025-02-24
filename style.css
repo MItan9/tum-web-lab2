@@ -191,3 +191,62 @@ h1 {
   border-radius: 16px;
   transition: var(--tr03);
 }
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Центрируем форму по вертикали */
+  background-color: #f5f5f5;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: calc(100% - 200px);
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  border-color: #f64840;
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(246, 72, 64, 0.3);
+}
+
+input[type="submit"] {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f64840;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 50%; /* Сделаем кнопку меньше */
+  margin: 0 auto; /* Центрируем кнопку */
+}
+
+input[type="submit"]:hover {
+  background-color: #ff0d00;
+}
