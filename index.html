@@ -1,14 +1,69 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- ADD YOUR CODE HERE -->
+    <div class="container">
+      <header class="logo">
+        <img
+          src="different\logo.png"
+          alt="Company logo"
+          width="160"
+          height="100"
+        />
+      </header>
+      <section class="hero">
+        <div class="slideshow-container">
+          <!-- Радио-кнопки -->
+          <input type="radio" id="btn1" name="slider" checked />
+          <input type="radio" id="btn2" name="slider" />
+          <input type="radio" id="btn3" name="slider" />
+          <input type="radio" id="btn4" name="slider" />
+
+          <!-- Слайды -->
+          <div class="slides">
+            <div class="slide">
+              <img src="different/Greace.jpeg" alt=" Greace" />
+
+              <p class="countryText">Greace for everyone</p>
+              <p class="price">244 €</p>
+              <button class="search">Leave a request</button>
+            </div>
+            <div class="slide">
+              <img src="different/Cappadokia.jpeg" alt="Cappadocia" />
+              <p class="countryText">Explore Cappadocia</p>
+              <p class="price">339 €</p>
+              <button class="search">Leave a request</button>
+            </div>
+            <div class="slide">
+              <img src="different/Hungary.jpeg" alt="Hungary" />
+              <p class="countryText">Short citybreak in Hungary</p>
+              <p class="price">220 €</p>
+              <button class="search">Leave a request</button>
+            </div>
+            <div class="slide">
+              <img src="different/Alps.jpg" alt="Alps" />
+              <p class="countryText">Ski resort in northern Italy</p>
+              <p class="price">660 €</p>
+              <button class="search">Leave a request</button>
+            </div>
+          </div>
+
+          <!-- Кнопки управления -->
+          <div class="navigation">
+            <label for="btn1" class="nav-btn"></label>
+            <label for="btn2" class="nav-btn"></label>
+            <label for="btn3" class="nav-btn"></label>
+            <label for="btn4" class="nav-btn"></label>
+          </div>
+        </div>
+      </section>
+      <section class=""></section>
+    </div>
   </body>
 </html>
