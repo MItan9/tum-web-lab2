@@ -1,5 +1,16 @@
+header {
+  position: fixed;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 body {
   margin: 0;
+  padding-top: 80px;
 }
 .logo {
   margin-bottom: 0;
@@ -243,10 +254,40 @@ input[type="submit"] {
   font-size: 30px;
   cursor: pointer;
   transition: 0.3s;
-  width: 50%; /* Сделаем кнопку меньше */
-  margin: 0 auto; /* Центрируем кнопку */
+  width: 50%;
+  margin: 0 auto;
 }
 
 input[type="submit"]:hover {
   background-color: #ff0d00;
+}
+
+.footer_contact_wrap {
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 54px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer_contact_items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 40px;
+}
+.footer_contact_link a {
+  font-family: "Onest";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #29a3cd;
+  transition: var(--tr03);
+}
+.footer_logo img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
 }
