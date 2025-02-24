@@ -125,3 +125,69 @@ input[type="radio"] {
 #btn4:checked ~ .navigation label[for="btn4"] {
   background: #333;
 }
+
+.offers {
+  margin-top: 5%;
+}
+
+h1 {
+  font-size: 300%;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+}
+
+.hot_offer_item {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  padding: 10px;
+  margin-left: 5%;
+}
+
+.hot_offer_item > div {
+  background: #fafafa;
+  width: 300px;
+  position: relative;
+  box-shadow: 0 6px 4px rgba(186, 176, 176, 0.45);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  padding-bottom: 70px;
+  transition: var(--tr03);
+  border: 1px solid #c4c4c4;
+  text-align: center;
+}
+
+.hot_offer_item_img {
+  width: calc(100% - 28px);
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.hot_offer_item_img img {
+  max-width: 600px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.hot_offer_item_button {
+  background: #f64840;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 28px);
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 16px;
+  transition: var(--tr03);
+}
