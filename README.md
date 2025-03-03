@@ -89,7 +89,7 @@ The mobile version shows reviews from users in a separate section.
 - Easy-to-use contact form for customer inquiries.
 - Well-organized footer with essential contact information.
 
-## How to Use
+## How to Use.
 
 1. Open the landing page in a web browser.
 2. Navigate through the hero slideshow to explore travel destinations.
