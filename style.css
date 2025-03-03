@@ -315,6 +315,12 @@ input[type="submit"]:hover {
     font-size: 200%;
     margin-top: -200px;
   }
+  .feedback-text {
+      font-size: 200%;
+      margin-top: 10px;
+      color: black;
+   
+  }
 
   .countryText {
     font-size: 200%;
@@ -380,6 +386,82 @@ input[type="submit"]:hover {
     font-size: 24px;
   }
 
+  .client-feedback {
+    background: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .client-feedback h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .feedback-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+
+  .feedback-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .feedback-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    font-style: italic;
+    padding-left: 40px;
+    position: relative;
+  }
+
+  .feedback-text::before {
+    content: "“";
+    font-size: 50px;
+    color: #f64840;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    font-weight: bold;
+  }
+
+  .feedback-text::after {
+    content: "”";
+    font-size: 50px;
+    color: #f64840;
+    position: absolute;
+    right: 10px;
+    bottom: -45px;
+    font-weight: bold;
+  }
+
+  .feedback-card span {
+    display: block;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #f64840;
+    text-align: right;
+    font-size: 16px;
+  }
+
+
+
+
   .footer_contact_wrap {
     flex-direction: column;
     gap: 30px;
@@ -392,6 +474,7 @@ input[type="submit"]:hover {
   .footer_contact_link a {
     font-size: 16px;
   }
+
 }
 
 /* Tablet view */
@@ -429,3 +512,12 @@ input[type="submit"]:hover {
     height: 600px;
   }
 }
+@media screen and (min-width: 768px) {
+  .client-feedback {
+    display: none;
+    margin-top: 100px;
+  }
+}
+
+
+
