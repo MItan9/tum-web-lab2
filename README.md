@@ -50,6 +50,32 @@ This is a landing page for a travel agency, offering various travel packages and
 
 ![footer](screens/footer.png)
 
+### 6. Mobile version
+
+- Fully responsive design adapts to mobile screens
+- Optimized navigation and layout for smaller devices
+- Maintains all functionality while ensuring easy touch interaction
+- Stacked layout for better mobile viewing experience
+- Adjusted font sizes and spacing for mobile readability
+
+![mobile1](screens/mobile1.png)
+![mobile2](screens/mobile2.png)
+![mobile3](screens/mobile3.png)
+
+### 7. Mobile only feature
+
+The mobile version shows reviews from users in a separate section.
+![mobileOnly](screens/mobileOnly.png)
+
+### 8. Mascot
+
+1. be related to the topic of the landing page
+2. be friendly/pleasant to the eyes (can be an image or an SVG)
+3. appear on the page after some delay on corners or borders of the page
+4. be animated (rotating, tilting, jumping, walking)
+5. display a welcome/CTA/info message when hovering with the mouse
+   ![mascot](screens/mascot.png)
+
 ## Technologies Used
 
 - HTML5 for structure.
