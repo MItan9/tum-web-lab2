@@ -457,7 +457,7 @@ input[type="submit"]:hover {
   }
 
   .feedback-text::before {
-    content: "“";
+    content: "\"";
     font-size: 50px;
     color: #f64840;
     position: absolute;
@@ -467,7 +467,7 @@ input[type="submit"]:hover {
   }
 
   .feedback-text::after {
-    content: "”";
+    content: "\"";
     font-size: 50px;
     color: #f64840;
     position: absolute;
@@ -602,6 +602,7 @@ input[type="submit"]:hover {
   }
 }
 
+/* Jumping Animation */
 
 /* Rotation Effect */
 @keyframes mascotRotate {
@@ -613,6 +614,138 @@ input[type="submit"]:hover {
 /* Apply Different Animations Randomly */
 .mascot-img {
   animation: mascotJump 2s infinite ease-in-out, mascotRotate 3s infinite ease-in-out;
+}
+
+/* Client Feedback Section */
+.client-feedback {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  margin-top: 5%;
+  padding: 4rem 0;
+}
+
+.client-feedback h2 {
+  font-size: 2.5rem;
+  color: #2d3436;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.client-feedback h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #f64840;
+  border-radius: 2px;
+}
+
+.feedback-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 2.5rem;
+  height: 100%;
+  transition: all 0.4s ease;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.feedback-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-content {
+  position: relative;
+}
+
+.feedback-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #2d3436;
+  font-style: italic;
+  padding-left: 45px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.feedback-text::before {
+  content: "\"";
+  font-size: 60px;
+  color: #f64840;
+  position: absolute;
+  left: 0;
+  top: -35px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.feedback-text::after {
+  content: "\"";
+  font-size: 60px;
+  color: #f64840;
+  position: absolute;
+  right: 10px;
+  bottom: -50px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.feedback-author {
+  display: block;
+  font-weight: 600;
+  color: #f64840;
+  text-align: right;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  position: relative;
+  padding-right: 1rem;
+}
+
+.feedback-author::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 2px;
+  background: #f64840;
+  opacity: 0.5;
+}
+
+/* Update responsive styles */
+@media screen and (max-width: 768px) {
+  .client-feedback {
+    padding: 3rem 0;
+  }
+
+  .client-feedback h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .feedback-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding-left: 35px;
+  }
+  
+  .feedback-card {
+    padding: 2rem;
+  }
+
+  .feedback-text::before,
+  .feedback-text::after {
+    font-size: 50px;
+  }
 }
 
 
